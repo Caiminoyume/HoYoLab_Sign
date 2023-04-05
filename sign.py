@@ -1,7 +1,8 @@
-import requests
-import schedule
 import json
 import time
+
+import requests
+import schedule
 
 from log import log
 
@@ -33,7 +34,6 @@ def sign():
 
 def run():
     schedule.every().day.at("06:30").do(sign)
-    print('启动完成')
     log.info('启动完成')
     while True:
         schedule.run_pending()
