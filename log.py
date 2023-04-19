@@ -1,7 +1,7 @@
 import logging
 
 LOG_FORMAT = "%(asctime)s - %(levelname)-8s - %(message)s"
-DATE_FORMAT = "%Y/%d/%m %H:%M:%S "
+DATE_FORMAT = "%Y/%m/%d %H:%M:%S "
 logging.basicConfig(filename='sign.log',
                     filemode='w',
                     level=logging.INFO,
